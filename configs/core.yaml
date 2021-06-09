@@ -1,0 +1,5 @@
+network:
+  bind: :8080
+logging:
+  level: debug
+  
