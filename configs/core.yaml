@@ -1,5 +1,7 @@
 network:
-  bind: :8080
+  bind: :8081
 logging:
   level: debug
+store:
+  database_url: host=localhost dbname=apiserver_dev password=123456 sslmode=disable
   

@@ -6,6 +6,7 @@ import "gopkg.in/yaml.v2"
 type Config struct {
 	Network        *Network `yaml:"network"`
 	Logging        *Logging `yaml:"logging"`
+	Store          *Store   `yaml:"store"`
 	configFilePath string
 }
 
@@ -17,6 +18,11 @@ type Network struct {
 // Logging ...
 type Logging struct {
 	Level string `yaml:"level"`
+}
+
+// Store ...
+type Store struct {
+	DatabaseURL string `yaml:"database_url"`
 }
 
 // NewConfig ...
